@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <br /><br />
+      <h1 class="text-center">Thanks for Donating</h1>
+      <form action="/pay" method="post">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Name"
+            name="Name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"
+            placeholder="Amount"
+            name="amount"
+            required
+            id="amount"
+            min="9"
+            max="200000"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-danger btn-block">
+            Generate Payment Link
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
